@@ -4,7 +4,7 @@ replicaCount: 1
 
 image: 
   repository: belstarr/colourserver
-  tag: 0.1.0
+  tag: dev-0.1.0
   pullPolicy: IfNotPresent
 
 service:

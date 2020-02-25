@@ -1,0 +1,19 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: dev-colourserver
+  namespace: dev
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:dev-*
+spec:
+  releaseName: dev-colourserver
+  chart:
+    git: git@github.com:cbellee/colourserver-flux-cd
+    path: charts/colourserver
+    ref: master
+  values:
+    image: 
+      repository: belstarr/colourserver
+      tag: dev-0.1.0
