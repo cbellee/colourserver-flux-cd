@@ -42,8 +42,6 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   hosts:
     - colourserver.kainiindustries.net
-      paths: []
-  tls: []
 
 resources:
   limits:
