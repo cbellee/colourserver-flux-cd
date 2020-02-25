@@ -8,7 +8,11 @@ helm upgrade -i flux fluxcd/flux --wait \
 --set git.url=git@github.com:cbellee/colourserver-flux-cd \
 --set git.path="clusters/dev" \
 --set git.label=dev \
---set additionalArgs={--sync-garbage-collection}
+--set additionalArgs={--sync-garbage-collection} \
+--set git-poll-interval=1m \
+--set sync-interval=1m \
+--set sync-timeout=30s
+
 
 helm upgrade -i helm-operator fluxcd/helm-operator --wait \
 --namespace fluxcd \
