@@ -11,7 +11,7 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.externalPort }}
-      targetPort: 8080
+      targetPort: 80
       name: http
       protocol: TCP
       {{- if (and (eq .Values.service.type "NodePort") (not (empty .Values.service.nodePort))) }}
