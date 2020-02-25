@@ -14,6 +14,6 @@ spec:
     path: charts/colourserver
     ref: master
   values:
-    image: 
+    image:
       repository: belstarr/colourserver
-      tag: dev-0.1.0
+      tag: dev-0.1.1
