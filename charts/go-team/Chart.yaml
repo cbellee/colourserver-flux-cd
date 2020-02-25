@@ -1,0 +1,12 @@
+apiVersion: v2
+name: colourserver
+appVersion: "0.1.0"
+description: Helm chart for Kubernetes
+version: 0.1.0
+home: https://github.com/cbellee/colourserver
+sources:
+- https://github.com/cbellee/colourserver
+maintainers:
+    - name: cbellee
+      email: cbellee@users.noreply.github.com
+engine: gotpl
