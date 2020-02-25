@@ -13,7 +13,6 @@ helm upgrade -i flux fluxcd/flux --wait \
 --set sync-interval=1m \
 --set sync-timeout=30s
 
-
 helm upgrade -i helm-operator fluxcd/helm-operator --wait \
 --namespace fluxcd \
 --set git.ssh.secretName=flux-git-deploy \

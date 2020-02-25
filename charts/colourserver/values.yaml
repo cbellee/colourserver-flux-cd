@@ -40,8 +40,9 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
+  path: /
   hosts:
-    - host: colourserver.kainiindustries.net
+    host: colourserver.kainiindustries.net
 
 resources:
   limits:
