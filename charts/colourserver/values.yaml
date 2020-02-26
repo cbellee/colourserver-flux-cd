@@ -1,6 +1,6 @@
 # Default values for colourserver.
 
-replicaCount: 1
+replicaCount: 3
 
 image: 
   repository: belstarr/colourserver
