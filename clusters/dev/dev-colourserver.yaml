@@ -16,4 +16,4 @@ spec:
   values:
     image:
       repository: belstarr/colourserver
-      tag: dev-0.1.4.3076
+      tag: dev-0.1.4.3077
