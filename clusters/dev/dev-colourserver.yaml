@@ -16,6 +16,6 @@ spec:
   values:
     image:
       repository: belstarr/colourserver
-      tag: dev-0.1.4.3161
+      tag: dev-0.1.4.3316
     ingress:
       enabled: true
